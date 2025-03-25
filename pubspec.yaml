@@ -37,6 +37,7 @@ dependencies:
   flutter_bloc: ^9.1.0
   equatable: ^2.0.7
   flutter_svg: ^2.0.17
+  pin_code_fields: ^8.0.1
 
 dev_dependencies:
   flutter_test:
@@ -83,6 +84,10 @@ flutter:
           weight: 400
         - asset: assets/fonts/gilroy-semiBold.ttf
           weight: 700
+        - asset: assets/fonts/gilroy-regular.ttf
+          weight: 400
+        # - asset: assets/fonts/gilroy-semiBold.ttf
+        #   weight: 700
           
         
    

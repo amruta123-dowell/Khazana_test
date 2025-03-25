@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:khazana_test/core/utils/app_routes.dart';
 import 'package:khazana_test/core/utils/image_constant.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -60,7 +61,12 @@ class SplashScreen extends StatelessWidget {
                 ),
                 const SizedBox(width: 100),
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                      AppRoutes.authScreen,
+                      (route) => false,
+                    );
+                  },
                   child: Container(
                     height: 48,
                     width: 46,
